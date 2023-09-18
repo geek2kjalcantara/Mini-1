@@ -198,7 +198,7 @@ nav ul li a {
 
 }
 
-.features-icon .fa {
+.features-icon .fa-solid {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -374,7 +374,7 @@ hr {
     border-radius: 3px;
 }
 
-.user-info .fa {
+.user-info .fa-brands {
     margin-left: 10px;
     color: #27c0ff;
     font-size: 20px;
@@ -420,9 +420,11 @@ hr {
     margin-bottom: 20px;
 
 }
-
+.footer-left ul li {
+    list-style: none;
+}
 .footer-right {
-    text-align: right;
+    text-align: center;
 
 }
 
@@ -435,14 +437,14 @@ hr {
     line-height: 35px;
 }
 
-.footer-left .fa, .footer-right .fa {
+.footer-left .fa-solid {
     font-size: 20px;
     color: #009688;
     margin: 10px;
 }
 
 .footer-img {
-    max-width: 370px;
+    max-width: 80%;
     opacity: 0.1;
     position: absolute;
     left: 50%;
@@ -455,7 +457,7 @@ hr {
 
 }
 
-.social-links .fa {
+.social-links .fa-brands {
     height: 40px;
     width: 40px;
     font-size: 20px;
@@ -464,12 +466,12 @@ hr {
     margin: 40px 5px 0;
     color: #009688;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .social-links .fa:hover {
     background: #009688;
-    color: #fff;
+    color: black;
     transform: translateY(-7px);
 }
 
@@ -480,12 +482,13 @@ hr {
 }
 
 @media screen and (max-width: 770px) {
-    .footer-left .fa, .footer-right {
+    .footer-left .fa-brands, .footer-right {
         flex-basis: 100%;
         font-size: 14px;
 
     }
     .footer-img {
-        top: 25%;
+        width: 100%;
+        max-width: max-content;
     }
 }
